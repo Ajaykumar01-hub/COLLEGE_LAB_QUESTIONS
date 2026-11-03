@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
 #define MAX 100
-
 int main()
 {
     char s[MAX];
@@ -11,7 +9,6 @@ int main()
     int i, length, max = 0;
     printf("Enter parentheses string: ");
     scanf("%s", s);
-
     // Store base index
     stack[++top] = -1;
     for (i = 0;s[i] !='\0'; i++)
