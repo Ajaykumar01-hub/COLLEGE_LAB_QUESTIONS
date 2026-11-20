@@ -16,6 +16,7 @@ int main() {
     v.push_back(30);
 
     v.insert(v.begin(), 5);  // Insert element
+    v.insert(v.begin()+1, 15); // Insert at position
     v.pop_back();            // Delete last element
 
     cout << "Vector: ";
@@ -46,9 +47,12 @@ int main() {
     m[1] = "Apple";
     m[2] = "Mango";
     m[3] = "Banana";
+    m[3] = "Banana";
 
     m[4] = "Orange";  // Insert element
     m.erase(2);       // Delete key 2
+    if (m.find(3) != m.end())
+    cout << "Found";      // Search key
 
     cout << "\n\nMap:\n";
     for (auto x : m)
